@@ -1,14 +1,20 @@
 
-hours = int(input("Enter the hours: "))
+try:
 
-rate = int(input("Enter the rate: "))
+    hours = int(input("Enter the hours: "))
 
-if hours > 40:
+    rate = int(input("Enter the rate: "))
 
-    pay = hours * (rate * 1.5)
+    if hours > 40:
 
-else:
+        pay = hours * (rate * 1.5)
 
-    pay = hours * rate
+    else:
 
-print(f"The pay is: {pay}")
+        pay = hours * rate
+
+    print(f"The pay is: {pay}")
+
+except:
+
+    print("Error, please enter numeric input")
