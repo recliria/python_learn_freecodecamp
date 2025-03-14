@@ -13,7 +13,7 @@ except:
 
     rate = int(input("Enter the rate: "))
 
-def compute_pay(hours,rate):    
+def compute_pay(hours,rate):   
     
 
     if hours > 40:

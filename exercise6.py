@@ -10,26 +10,34 @@ except:
     score = float(input("Enter the score: "))
 
 # Evaluate user score, if it is between 0 and 10
-if score >= 0.9 and score < 10.0:
+def compute_grade(score):
 
-    print("A")
+    if score >= 0.9 and score < 10.0:
 
-elif score >= 0.8 and score < 10.0:
+        grade = "A"
 
-    print("B")
+    elif score >= 0.8 and score < 10.0:
 
-elif score >= 0.7 and score < 10.0:
+        grade = "B"
 
-    print("C")
+    elif score >= 0.7 and score < 10.0:
 
-elif score >= 0.6 and score < 10.0:
+        grade = "C"
 
-    print("D")
+    elif score >= 0.6 and score < 10.0:
 
-elif score < 0.6 and score >0:
+        grade = "D"
 
-    print("F")
+    elif score < 0.6 and score >0:
 
-else:
+        grade = "F"
 
-    print("Bad score")
+    else:
+
+        grade = "Bad score"
+
+    return grade
+
+grade_result = compute_grade(score)
+
+print(grade_result)
